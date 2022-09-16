@@ -1,0 +1,26 @@
+AIM: 
+Create a new process by invoking the appropriate system call. Get the process identifier of the currently running process and its respective parent using system calls and display the same using a C program.
+ALGORITHM:
+Step 1 : Start program.
+Step 2  : An existing process can create a new one by calling the fork() function.
+Step 3 : The new process created by fork() is called the child process.
+Step 4  : We are using her getpid()to get the process id.
+Step 5 : Stop program..
+PROGRAM:
+#include<stdio.h>
+#include<unistd.h>
+int main()
+{
+
+  printf("Process ID: %d\n", getpid() );
+  printf("Parent Process ID: %d\n", getppid() );
+
+  return 0;
+}
+
+INPUT AND OUTPUT:
+1139
+1137
+ 
+RESULT:
+Thus the program has been successfully implemented using system call
